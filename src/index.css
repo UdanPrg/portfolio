@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  /* custom */
-  --color-pf-dark: hsla(0, 0%, 5%, 1);
-  --color-pf-dark-30: hsla(0, 0%, 5%, 0.3);
-  --color-pf-bluedark: hsla(249, 19%, 14%, 1);
-  --color-pf-bluegray: hsla(228, 13%, 39%, 1);
-  --color-pf-green: hsla(72, 80%, 55%, 1);
-  --color-pf-green-30: hsla(0, 0%, 5%, 0.3);
-  /* default */
+  
+  /* Custom Weigths */
+  --main-height: calc(100vh - 64px);
+  
+  /* Custom Colors */
+  --color-aw-dark: hsla(0, 0%, 5%, 1);
+  --color-aw-dark-30: hsla(0, 0%, 5%, 0.3);
+  --color-aw-bluedark: hsla(249, 19%, 14%, 1);
+  --color-aw-bluegray: hsla(228, 13%, 39%, 1);
+  --color-aw-green: hsla(72, 80%, 55%, 1);
+  --color-aw-green-30: hsla(0, 0%, 5%, 0.3);
+  /* Default Colors */
   --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

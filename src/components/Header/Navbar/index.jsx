@@ -1,18 +1,20 @@
-import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Navbar() {
   return (
     <div>
         <nav>
+            {/* profesional social network icons */}
             <ul className="flex space-x-4">
                 <li>
-                    <Link to="/">Home</Link>
+                    <a href="https://github.com/UdanPrg" target='_blank' className="text-white hover:text-gray-300 text-2xl">
+                        <FontAwesomeIcon icon="fa-brands fa-github" />
+                    </a>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link to="*">Not Found</Link>
+                    <a href="https://www.linkedin.com/in/urielarana" target='_blank' className="text-white hover:text-gray-300 text-2xl">
+                        <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                    </a>
                 </li>
             </ul>
         </nav>

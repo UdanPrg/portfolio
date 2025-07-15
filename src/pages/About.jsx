@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   return (
-    <main className="flex flex-col items-center justify-center h-screen space-y-4">
-      <h1 className="text-3xl font-bold">About</h1>
-      <FontAwesomeIcon icon="fa-solid fa-info-circle" className="text-5xl" />
-      <p className="text-lg">Esta es la página acerca de la aplicación.</p>
-      <p className="text-sm text-gray-500">Está página está aún en construcción.</p>
-      <Link to="/" className="text-blue-500 hover:underline">Puedes volver al home</Link>
-    </main>
-  )
+    <div className="flex flex-col items-center justify-center min-h-(--main-height) bg-gray-100 p-4">
+      <h1 className="text-2xl font-bold mb-4">About</h1>
+      <p className="text-gray-700">
+        This is the about page of the application where you can find information
+        about the application, its features, and the team behind it.
+      </p>
+      <div className="mt-4">
+        <FontAwesomeIcon
+          icon="fa-solid fa-info-circle"
+          className="text-3xl text-blue-500"
+        />
+      </div>
+    </div>
+  );
 }
