@@ -14,6 +14,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
 library.add(fas, faTwitter, faFontAwesome, faGithub, faLinkedin);
 
+
 function App() {
   return (
     <Router>
