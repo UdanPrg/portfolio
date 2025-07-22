@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavItems from "./NavItems";
 
 export default function Sidebar() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
@@ -19,9 +19,9 @@ export default function Sidebar() {
   ];
   return (
     <div
-      className={`bg-aw-dark-30 text-white p-4 ${
-        isOpen ? "w-64" : "w-16"
-      } h-full border-r border-aw-bluegray transition-width duration-500`}
+      className={`bg-pf-dark-30 text-white p-4 ${
+        isOpen ? "w-full sm:w-64" : "w-16"
+      } h-full border-r border-pf-bluegray transition-width duration-500`}
     >
       <div
         className={`flex items-center justify-end mb-4`}
